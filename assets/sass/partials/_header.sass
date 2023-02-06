@@ -1,0 +1,25 @@
+@import mixins
+@import variables
+
+.header
+    width: 100%
+
+    .navbar
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        padding: 1rem
+        &-links
+            @include flexCenter
+            gap: 2rem
+            > li
+                font-family: $font-primary
+                text-transform: uppercase
+                font-weight: bold
+                letter-spacing: 1px
+                >a
+                    color: black
+                    &:hover
+                        color: $color-primary
+                        transition: all 1s ease
