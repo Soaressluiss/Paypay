@@ -1,0 +1,33 @@
+@import ../../mixins
+@import ../../variables
+
+
+.container-functionalities
+    display: grid
+    grid-template-areas: "a a a""b c d"
+    justify-items: center
+    padding: 4rem
+    gap: 3rem
+    .functionality-Title
+        @include fontDefault(2rem, bold, $font-secondary)
+        grid-area: a
+
+    .functionality01
+        grid-area: b
+        @extend %FlexCenterColumn
+    .functionality02
+        grid-area: c
+        @extend %FlexCenterColumn
+    .functionality03
+        grid-area: d
+        @extend %FlexCenterColumn
+
+    .functionality-info
+        @include fontDefault(1.3rem, bold, $font-secondary)
+        text-transform: uppercase
+        letter-spacing: 1.4px
+    .functionality-msg
+        text-align: center
+    .fa-solid
+        font-size: 2rem
+        color: $color-primary

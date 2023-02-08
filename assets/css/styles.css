@@ -6,6 +6,17 @@
   list-style: none;
 }
 
+.container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
+}
+
 .header {
   width: 100%;
 }
@@ -34,6 +45,17 @@
 .header .navbar-links > li > a:hover {
   color: #17C86C;
   transition: all 1s ease;
+}
+
+.container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
 }
 
 .container-main {
@@ -78,6 +100,56 @@
   background-color: #07D656;
   cursor: pointer;
   transition: all 1s ease;
+}
+
+.container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
+}
+
+.container-functionalities {
+  display: grid;
+  grid-template-areas: "a a a" "b c d";
+  justify-items: center;
+  padding: 4rem;
+  gap: 3rem;
+}
+.container-functionalities .functionality-Title {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  grid-area: a;
+}
+.container-functionalities .functionality01 {
+  grid-area: b;
+}
+.container-functionalities .functionality02 {
+  grid-area: c;
+}
+.container-functionalities .functionality03 {
+  grid-area: d;
+}
+.container-functionalities .functionality-info {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+.container-functionalities .functionality-msg {
+  text-align: center;
+}
+.container-functionalities .fa-solid {
+  font-size: 2rem;
+  color: #17C86C;
 }
 
 /*# sourceMappingURL=styles.css.map */
