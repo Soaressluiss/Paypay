@@ -315,4 +315,18 @@
   color: white;
 }
 
+.container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03, .container-plans .plans-info, .plans-wrapper .plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
+}
+
 /*# sourceMappingURL=styles.css.map */
