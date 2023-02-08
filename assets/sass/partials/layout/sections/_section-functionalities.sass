@@ -1,7 +1,6 @@
 @import ../../mixins
 @import ../../variables
 
-
 .container-functionalities
     display: grid
     grid-template-areas: "a a a""b c d"
@@ -15,12 +14,15 @@
     .functionality01
         grid-area: b
         @extend %FlexCenterColumn
+        @extend %functionalitySpaces
     .functionality02
         grid-area: c
         @extend %FlexCenterColumn
+        @extend %functionalitySpaces
     .functionality03
         grid-area: d
         @extend %FlexCenterColumn
+        @extend %functionalitySpaces
 
     .functionality-info
         @include fontDefault(1.3rem, bold, $font-secondary)

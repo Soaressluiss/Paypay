@@ -6,11 +6,14 @@
   list-style: none;
 }
 
-.container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
+.plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
+}
+
+.container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
   gap: 0.8rem;
   padding: 1rem;
   border-radius: 10px;
@@ -47,11 +50,14 @@
   transition: all 1s ease;
 }
 
-.container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
+.plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
+}
+
+.container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
   gap: 0.8rem;
   padding: 1rem;
   border-radius: 10px;
@@ -102,11 +108,14 @@
   transition: all 1s ease;
 }
 
-.container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
+.plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
+}
+
+.container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
   gap: 0.8rem;
   padding: 1rem;
   border-radius: 10px;
@@ -152,11 +161,14 @@
   color: #1BA637;
 }
 
-.container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
+.plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
+}
+
+.container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
   gap: 0.8rem;
   padding: 1rem;
   border-radius: 10px;
@@ -187,6 +199,120 @@
   font-size: 0.9rem;
   max-width: 75%;
   font-weight: 500;
+}
+
+.plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
+}
+
+.container-plans {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 3rem 0;
+  height: 100vh;
+}
+.container-plans .plans-titlePrincipal {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  margin: 1rem 0;
+}
+.container-plans .plans-msg {
+  font-size: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-family: "Gill Sans, sans-serif";
+  text-align: center;
+  max-width: 50%;
+}
+
+.plans-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 1.5rem;
+  height: 100vh;
+}
+.plans-wrapper .plans {
+  gap: 1rem;
+  width: 100%;
+  background: rgba(8, 235, 95, 0.2470588235);
+  box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.plans-wrapper .plans .plans-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.plans-wrapper .plans .fa-medal {
+  color: #1BA637;
+  font-size: 1.7rem;
+}
+.plans-wrapper .plans .plans-title-info {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: "Gill Sans, sans-serif";
+  text-align: center;
+}
+.plans-wrapper .plans .btn-plan {
+  background-color: #1BA637;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  letter-spacing: 1px;
+  padding: 0.5rem 2.1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.plans-wrapper .plans .btn-plan:hover {
+  background-color: #07D656;
+  color: black;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+#plansGold {
+  background-color: #137527;
+}
+#plansGold > .plans-title {
+  color: white;
+}
+#plansGold > .fa-medal {
+  color: orange;
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: black;
+}
+#plansGold > .plans-recommended {
+  background-color: #1BA637;
+  color: white;
+  border-radius: 0 20px 0 20px;
+  border: none;
+  letter-spacing: 1px;
+  padding: 0.5rem 2.1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#plansGold > .plans-title-info {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

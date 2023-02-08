@@ -1,0 +1,79 @@
+@import ../../mixins
+@import ../../variables
+
+.container-plans
+    @include flexCenter
+    flex-direction: column
+    padding: 3rem 0
+    height: 100vh
+
+    .plans-info
+        @extend %FlexCenterColumn
+
+    .plans-titlePrincipal
+        @include fontDefault(2rem, bold, $font-secondary)
+        margin: 1rem 0
+    .plans-msg
+        @include fontDefault($font-secondary)
+        max-width: 50%
+
+.plans-wrapper
+    @include flexCenter
+    padding: 2rem
+    gap: 1.5rem
+    height: 100vh
+
+    .plans
+        @extend %FlexCenterColumn
+        gap: 1rem
+        width: 100%
+        background: $color-secondary
+        box-shadow: 8px 12px 37px 11px rgba(0,0,0,0.1)
+        padding: 1rem
+        border-radius: 10px
+        .plans-title
+            @include fontDefault(1.5rem, bold, $font-secondary)
+            letter-spacing: 1px
+        .fa-medal
+            color: $color-primary
+            font-size: 1.7rem
+        .plans-title-info
+            @include fontDefault(1.1rem)
+
+        .btn-plan
+            background-color: $color-primary
+            color: white
+            border-radius: 20px
+            border: none
+            letter-spacing: 1px
+            padding: 0.5rem 2.1rem
+            font-family: $font-secondary
+            text-transform: uppercase
+            font-weight: bold
+            &:hover
+                background-color: $color-tertiary
+                color: black
+                transition: all 1s ease
+                cursor: pointer
+
+#plansGold
+    background-color: $color-fourth
+    > .plans-title
+        color: white
+    > .fa-medal
+        color: orange
+        -webkit-text-stroke-width: 1.3px
+        -webkit-text-stroke-color: black
+    > .plans-recommended
+        background-color: $color-primary
+        color: white
+        border-radius: 0 20px 0 20px
+        border: none
+        letter-spacing: 1px
+        padding: 0.5rem 2.1rem
+        font-family: $font-secondary
+        text-transform: uppercase
+        font-weight: bold
+
+    > .plans-title-info
+        color: white
