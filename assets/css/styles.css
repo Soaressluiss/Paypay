@@ -152,4 +152,41 @@
   color: #17C86C;
 }
 
+.container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
+}
+
+.container-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  background-color: rgba(8, 235, 95, 0.2470588235);
+  gap: 5rem;
+}
+.container-app .app-info-downloads {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.container-app .app-info-downloads .app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+}
+.container-app .app-info-downloads .app-info {
+  font-size: 0.9rem;
+  max-width: 75%;
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=styles.css.map */
