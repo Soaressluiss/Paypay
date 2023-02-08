@@ -43,7 +43,7 @@
   color: black;
 }
 .header .navbar-links > li > a:hover {
-  color: #17C86C;
+  color: #1BA637;
   transition: all 1s ease;
 }
 
@@ -84,11 +84,11 @@
   width: 80%;
 }
 .container-main .container-banner .banner-info .banner-title .banner-Paypay {
-  color: #17C86C;
+  color: #1BA637;
   font-weight: 900;
 }
 .container-main .container-banner .banner-info .banner-btn {
-  background-color: #17C86C;
+  background-color: #1BA637;
   border: none;
   border-radius: 20px;
   padding: 0.7rem 2.4rem;
@@ -149,7 +149,7 @@
 }
 .container-functionalities .fa-solid {
   font-size: 2rem;
-  color: #17C86C;
+  color: #1BA637;
 }
 
 .container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
