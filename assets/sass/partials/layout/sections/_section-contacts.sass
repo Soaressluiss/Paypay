@@ -1,3 +1,52 @@
 @import ../../mixins
 @import ../../variables
 
+.container-contact
+    background:
+        image: url(../imgs/background-contact.png)
+        repeat: no-repeat
+        size: cover
+    padding: 2rem 0
+    @extend %FlexCenterColumn
+    gap: 1rem
+
+    .contact-title
+        @include fontDefault(2rem, bold, $font-secondary)
+        color: white
+
+    .contact-msg
+        @include fontDefault(1rem)
+        color: white
+        max-width: 60%
+        text-align: center
+
+#contact-email
+    padding: 0 1.5rem
+    margin-top: 1rem
+    width: 20rem
+    height: 2.7rem
+    border: none
+            radius: 5px
+            bottom: white 3px solid
+    color: white
+    background-color: rgba(0, 0, 0, 0.678)
+    &::placeholder
+        color: white
+
+.contact-btn
+    background-color: $color-primary
+    color: white
+    border: none
+    border-radius: 15px
+    letter-spacing: 1px
+    padding: 0.7rem 2.1rem
+    text-transform: uppercase
+    font:
+        family: $font-secondary
+        weight: bold
+
+    &:hover
+        background-color: $color-tertiary
+        color: black
+        transition: all 1s ease
+        cursor: pointer
