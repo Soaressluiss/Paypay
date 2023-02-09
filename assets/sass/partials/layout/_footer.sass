@@ -1,0 +1,42 @@
+@import ../mixins
+@import ../variables
+
+.footer
+    @extend %FlexCenterColumn
+    margin-top: 1rem
+    gap: 1rem
+    &-copy
+        @include fontDefault(1.1rem, bold, $font-secondary)
+        letter-spacing: 1px
+
+#payPay
+    @include fontDefault(1.3rem, bold,$font-secondary)
+    color: $color-fourth
+
+// footer DEV
+
+.footer-dev
+    @extend %FlexCenterColumn
+    width: 100%
+    height: 100%
+    padding: 1rem 0
+    background: $color-primary
+    > h6
+        @include fontDefault(1.2rem, bold, $font-secondary)
+        color: white
+        letter-spacing: 1px
+        .devName
+            color: black
+            font-weight: 800
+            font-size: 1.4rem
+
+    .dev-socialNetwork
+        @include flexCenter
+        gap: 1.5rem
+        margin:1rem 0
+        .social-network
+            color: white
+            font-size: 1.6rem
+            &:hover
+                color: black
+                transition: all 1s ease

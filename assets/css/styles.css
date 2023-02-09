@@ -6,7 +6,7 @@
   list-style: none;
 }
 
-.container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
+.footer-dev, .footer, .container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +50,7 @@
   transition: all 1s ease;
 }
 
-.container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
+.footer-dev, .footer, .container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,7 +108,7 @@
   transition: all 1s ease;
 }
 
-.container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
+.footer-dev, .footer, .container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,7 +161,7 @@
   color: #1BA637;
 }
 
-.container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
+.footer-dev, .footer, .container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,7 +201,7 @@
   font-weight: 500;
 }
 
-.container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
+.footer-dev, .footer, .container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -314,7 +314,7 @@
   color: white;
 }
 
-.container-contact, .container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03, .container-plans .plans-info, .plans-wrapper .plans {
+.footer-dev, .footer, .container-contact, .container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03, .container-plans .plans-info, .plans-wrapper .plans {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -383,6 +383,75 @@
   color: black;
   transition: all 1s ease;
   cursor: pointer;
+}
+
+.footer-dev, .footer, .container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03, .container-plans .plans-info, .plans-wrapper .plans, .container-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.footer-copy {
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#payPay {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  color: #137527;
+}
+
+.footer-dev {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+  background: #1BA637;
+}
+.footer-dev > h6 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+}
+.footer-dev > h6 .devName {
+  color: black;
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+.footer-dev .dev-socialNetwork {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+.footer-dev .dev-socialNetwork .social-network {
+  color: white;
+  font-size: 1.6rem;
+}
+.footer-dev .dev-socialNetwork .social-network:hover {
+  color: black;
+  transition: all 1s ease;
 }
 
 /*# sourceMappingURL=styles.css.map */
