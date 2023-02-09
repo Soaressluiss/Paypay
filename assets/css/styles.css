@@ -221,7 +221,6 @@
   justify-content: space-between;
   flex-direction: column;
   padding: 3rem 0;
-  height: 100vh;
 }
 .container-plans .plans-titlePrincipal {
   font-size: 2rem;
