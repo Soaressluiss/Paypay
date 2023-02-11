@@ -498,4 +498,13 @@ html {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #07D656;
+  border-radius: 20px;
+}
+
 /*# sourceMappingURL=styles.css.map */

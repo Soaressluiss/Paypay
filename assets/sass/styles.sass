@@ -5,9 +5,19 @@
     text-decoration: none
     list-style: none
 
+@import ./partials/_variables
 @import partials/layout/header
 @import partials/layout/main
 @import partials/layout/footer
 
 html
     scroll-behavior: smooth
+
+body
+    &::-webkit-scrollbar
+        width: 10px
+
+body
+    &::-webkit-scrollbar-thumb
+        background-color: $color-tertiary
+        border-radius: 20px
