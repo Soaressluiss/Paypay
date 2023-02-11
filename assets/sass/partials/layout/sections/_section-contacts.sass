@@ -15,10 +15,9 @@
         color: white
 
     .contact-msg
-        @include fontDefault(1rem)
+        @include fontDefault(1rem, 400, $font-tertiary)
         color: white
         max-width: 60%
-        text-align: center
 
 #contact-email
     padding: 0 1.5rem
@@ -35,7 +34,7 @@
 
 .contact-btn
     background-color: $color-primary
-    color: white
+    color: black
     border: none
     border-radius: 15px
     letter-spacing: 1px
@@ -47,6 +46,5 @@
 
     &:hover
         background-color: $color-tertiary
-        color: black
         transition: all 1s ease
         cursor: pointer

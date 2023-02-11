@@ -5,7 +5,6 @@
     @include flexCenter
     flex-direction: column
     padding: 3rem 0
-    // height: 100vh
 
     .plans-info
         @extend %FlexCenterColumn
@@ -14,14 +13,14 @@
         @include fontDefault(2rem, bold, $font-secondary)
         margin: 1rem 0
     .plans-msg
-        @include fontDefault($font-secondary)
+        @include fontDefault(1rem, 400, $font-tertiary)
         max-width: 50%
 
 .plans-wrapper
     @include flexCenter
     padding: 2rem
     gap: 1.5rem
-    height: 100vh
+    margin: 2rem 0
 
     .plans
         @extend %FlexCenterColumn
@@ -42,7 +41,7 @@
 
         .btn-plan
             background-color: $color-primary
-            color: white
+            color: black
             border-radius: 20px
             border: none
             letter-spacing: 1px
@@ -52,7 +51,6 @@
             font-weight: bold
             &:hover
                 background-color: $color-tertiary
-                color: black
                 transition: all 1s ease
                 cursor: pointer
 
@@ -66,7 +64,7 @@
         -webkit-text-stroke-color: black
     > .plans-recommended
         background-color: $color-primary
-        color: white
+        color: black
         border-radius: 0 20px 0 20px
         border: none
         letter-spacing: 1px

@@ -28,7 +28,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 .header .navbar-links {
   display: flex;
@@ -48,6 +48,10 @@
 .header .navbar-links > li > a:hover {
   color: #1BA637;
   transition: all 1s ease;
+}
+.header a > img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer-dev, .footer, .container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
@@ -81,17 +85,21 @@
   gap: 2rem;
 }
 .container-main .container-banner .banner-info .banner-title {
-  font-weight: bold;
-  font-family: "Almarai", sans-serif;
   font-size: 2rem;
   font-weight: bold;
+  font-family: "Almarai", sans-serif;
+  text-align: center;
   letter-spacing: 2px;
   line-height: 1.5;
   width: 80%;
 }
 .container-main .container-banner .banner-info .banner-title .banner-Paypay {
-  color: #1BA637;
-  font-weight: 900;
+  color: #137527;
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "Koh Santepheap", cursive;
+  text-align: center;
+  letter-spacing: normal;
 }
 .container-main .container-banner .banner-info .banner-btn {
   background-color: #1BA637;
@@ -106,6 +114,10 @@
   background-color: #07D656;
   cursor: pointer;
   transition: all 1s ease;
+}
+.container-main .container-banner > img {
+  width: 40%;
+  height: 100%;
 }
 
 .footer-dev, .footer, .container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
@@ -138,12 +150,24 @@
 }
 .container-functionalities .functionality01 {
   grid-area: b;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  text-align: center;
 }
 .container-functionalities .functionality02 {
   grid-area: c;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  text-align: center;
 }
 .container-functionalities .functionality03 {
   grid-area: d;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  text-align: center;
 }
 .container-functionalities .functionality-info {
   font-size: 1.3rem;
@@ -189,6 +213,10 @@
   align-items: flex-start;
   gap: 1.5rem;
 }
+.container-app .app-info-downloads .app-storeDownloads > img {
+  width: 100%;
+  height: 100%;
+}
 .container-app .app-info-downloads .app-title {
   font-size: 2rem;
   font-weight: bold;
@@ -197,8 +225,17 @@
 }
 .container-app .app-info-downloads .app-info {
   font-size: 0.9rem;
-  max-width: 75%;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+.container-app .appBoyimg {
+  width: 30%;
+  height: 100%;
+}
+.container-app a > img {
+  width: 174px;
+  height: 60px;
 }
 
 .footer-dev, .footer, .container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03 {
@@ -230,9 +267,9 @@
   margin: 1rem 0;
 }
 .container-plans .plans-msg {
-  font-size: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
   font-weight: 400;
-  font-family: "Gill Sans, sans-serif";
+  font-family: "Inter", sans-serif;
   text-align: center;
   max-width: 50%;
 }
@@ -243,7 +280,7 @@
   justify-content: space-between;
   padding: 2rem;
   gap: 1.5rem;
-  height: 100vh;
+  margin: 2rem 0;
 }
 .plans-wrapper .plans {
   gap: 1rem;
@@ -272,7 +309,7 @@
 }
 .plans-wrapper .plans .btn-plan {
   background-color: #1BA637;
-  color: white;
+  color: black;
   border-radius: 20px;
   border: none;
   letter-spacing: 1px;
@@ -283,7 +320,6 @@
 }
 .plans-wrapper .plans .btn-plan:hover {
   background-color: #07D656;
-  color: black;
   transition: all 1s ease;
   cursor: pointer;
 }
@@ -301,7 +337,7 @@
 }
 #plansGold > .plans-recommended {
   background-color: #1BA637;
-  color: white;
+  color: black;
   border-radius: 0 20px 0 20px;
   border: none;
   letter-spacing: 1px;
@@ -345,11 +381,10 @@
 .container-contact .contact-msg {
   font-size: 1rem;
   font-weight: 400;
-  font-family: "Gill Sans, sans-serif";
+  font-family: "Inter", sans-serif;
   text-align: center;
   color: white;
   max-width: 60%;
-  text-align: center;
 }
 
 #contact-email {
@@ -369,7 +404,7 @@
 
 .contact-btn {
   background-color: #1BA637;
-  color: white;
+  color: black;
   border: none;
   border-radius: 15px;
   letter-spacing: 1px;
@@ -380,7 +415,6 @@
 }
 .contact-btn:hover {
   background-color: #07D656;
-  color: black;
   transition: all 1s ease;
   cursor: pointer;
 }
@@ -412,11 +446,12 @@
 }
 
 #payPay {
-  font-size: 1.3rem;
-  font-weight: bold;
-  font-family: "Source Sans Pro", sans-serif;
-  text-align: center;
   color: #137527;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Koh Santepheap", cursive;
+  text-align: center;
+  letter-spacing: normal;
 }
 
 .footer-dev {
@@ -452,6 +487,10 @@
 .footer-dev .dev-socialNetwork .social-network:hover {
   color: black;
   transition: all 1s ease;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=styles.css.map */

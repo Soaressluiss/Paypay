@@ -14,22 +14,19 @@
             align-items: flex-start
             gap: 2rem
             .banner-title
-                font:
-                    weight: bold
-                    family: $font-primary
-                    size: 2rem
-                    weight: bold
+                @include fontDefault(2rem, bold,  $font-primary)
                 letter-spacing: 2px
-                line-height:1.5
+                line-height: 1.5
                 width: 80%
                 .banner-Paypay
-                    color: $color-primary
-                    font-weight: 900
+                    color: $color-fourth
+                    @include fontDefault(2.4rem, bold,  $font-PayPay)
+                    letter-spacing: normal
             .banner-btn
                 background-color: $color-primary
                 border: none
                 border-radius: 20px
-                padding:.7rem 2.4rem
+                padding: .7rem 2.4rem
                 font-family: $font-secondary
                 text-transform: uppercase
                 font-weight: bold
@@ -37,4 +34,6 @@
                     background-color: $color-tertiary
                     cursor: pointer
                     transition: all 1s ease
-                    
+        >img
+            width: 40%
+            height: 100%

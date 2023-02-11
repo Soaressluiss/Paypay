@@ -11,9 +11,17 @@
         flex-direction: column
         align-items: flex-start
         gap: 1.5rem
+        .app-storeDownloads >img
+            width: 100%
+            height: 100%
         .app-title
             @include fontDefault(2rem, bold, $font-secondary)
         .app-info
-            font-size: .9rem
-            max-width: 75%
-            font-weight: 500
+            @include fontDefault(.9rem,400, $font-tertiary)
+
+    .appBoyimg
+        width: 30%
+        height: 100%
+    a>img
+        width: 174px
+        height: 60px
