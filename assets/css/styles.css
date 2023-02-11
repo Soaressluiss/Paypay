@@ -22,6 +22,10 @@
 
 .header {
   width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 .header .navbar {
   display: flex;
@@ -46,8 +50,8 @@
   color: black;
 }
 .header .navbar-links > li > a:hover {
-  color: #1BA637;
-  transition: all 1s ease;
+  color: #137527;
+  transition: all 0.5s ease;
 }
 .header a > img {
   width: 100%;
@@ -70,6 +74,7 @@
 
 .container-main {
   width: 100%;
+  margin: 100px 0;
 }
 .container-main .container-banner {
   display: flex;
