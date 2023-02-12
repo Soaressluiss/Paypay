@@ -494,6 +494,21 @@
   transition: all 1s ease;
 }
 
+.fa-circle-arrow-up {
+  position: fixed;
+  top: 600px;
+  right: 30px;
+  font-size: 2.2rem;
+  color: #07D656;
+  cursor: pointer;
+  display: none;
+}
+.fa-circle-arrow-up:hover {
+  color: #137527;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
 html {
   scroll-behavior: smooth;
 }
