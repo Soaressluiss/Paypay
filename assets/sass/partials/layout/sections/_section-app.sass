@@ -1,5 +1,6 @@
 @import ../../mixins
 @import ../../variables
+@import ../../breakpoints
 
 .container-app
     @include flexCenter
@@ -11,6 +12,8 @@
         flex-direction: column
         align-items: flex-start
         gap: 1.5rem
+        @include tablet /* breakpoint */
+            align-items: center
         .app-storeDownloads >img
             width: 100%
             height: 100%
@@ -22,6 +25,8 @@
     .appBoyimg
         width: 30%
         height: 100%
+        @include tablet /* breakpoint */
+            display: none
     a>img
         width: 174px
         height: 60px

@@ -57,6 +57,11 @@
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 835px) {
+  .header a > img {
+    width: 90%;
+  }
+}
 
 .footer-dev, .footer, .container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
   display: flex;
@@ -89,6 +94,12 @@
   align-items: flex-start;
   gap: 2rem;
 }
+@media screen and (max-width: 835px) {
+  .container-main .container-banner .banner-info {
+    align-items: center;
+    gap: 1rem;
+  }
+}
 .container-main .container-banner .banner-info .banner-title {
   font-size: 2rem;
   font-weight: bold;
@@ -98,6 +109,11 @@
   line-height: 1.5;
   width: 80%;
 }
+@media screen and (max-width: 835px) {
+  .container-main .container-banner .banner-info .banner-title {
+    font-size: 1.3rem;
+  }
+}
 .container-main .container-banner .banner-info .banner-title .banner-Paypay {
   color: #137527;
   font-size: 2.4rem;
@@ -105,6 +121,7 @@
   font-family: "Koh Santepheap", cursive;
   text-align: center;
   letter-spacing: normal;
+  font-size: 1.4rem;
 }
 .container-main .container-banner .banner-info .banner-btn {
   background-color: #1BA637;
@@ -114,6 +131,11 @@
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
+}
+@media screen and (max-width: 835px) {
+  .container-main .container-banner .banner-info .banner-btn {
+    padding: 0.6rem 1.1rem;
+  }
 }
 .container-main .container-banner .banner-info .banner-btn:hover {
   background-color: #07D656;
@@ -145,6 +167,12 @@
   justify-items: center;
   padding: 4rem;
   gap: 3rem;
+}
+@media screen and (max-width: 835px) {
+  .container-functionalities {
+    grid-template-areas: "a a" "b c" "d d";
+    gap: 2rem;
+  }
 }
 .container-functionalities .functionality-Title {
   font-size: 2rem;
@@ -218,6 +246,11 @@
   align-items: flex-start;
   gap: 1.5rem;
 }
+@media screen and (max-width: 835px) {
+  .container-app .app-info-downloads {
+    align-items: center;
+  }
+}
 .container-app .app-info-downloads .app-storeDownloads > img {
   width: 100%;
   height: 100%;
@@ -237,6 +270,11 @@
 .container-app .appBoyimg {
   width: 30%;
   height: 100%;
+}
+@media screen and (max-width: 835px) {
+  .container-app .appBoyimg {
+    display: none;
+  }
 }
 .container-app a > img {
   width: 174px;
@@ -278,6 +316,11 @@
   text-align: center;
   max-width: 50%;
 }
+@media screen and (max-width: 835px) {
+  .container-plans .plans-msg {
+    max-width: 80%;
+  }
+}
 
 .plans-wrapper {
   display: flex;
@@ -287,6 +330,14 @@
   gap: 1.5rem;
   margin: 2rem 0;
 }
+@media screen and (max-width: 835px) {
+  .plans-wrapper {
+    flex-direction: column;
+    width: 85%;
+    margin: 0;
+    gap: 2rem;
+  }
+}
 .plans-wrapper .plans {
   gap: 1rem;
   width: 100%;
@@ -294,6 +345,11 @@
   box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   border-radius: 10px;
+}
+@media screen and (max-width: 835px) {
+  .plans-wrapper .plans {
+    gap: 1.3rem;
+  }
 }
 .plans-wrapper .plans .plans-title {
   font-size: 1.5rem;
@@ -323,6 +379,11 @@
   text-transform: uppercase;
   font-weight: bold;
 }
+@media screen and (max-width: 835px) {
+  .plans-wrapper .plans .btn-plan {
+    padding: 0.7rem 2.4rem;
+  }
+}
 .plans-wrapper .plans .btn-plan:hover {
   background-color: #07D656;
   transition: all 1s ease;
@@ -331,6 +392,11 @@
 
 #plansGold {
   background-color: #137527;
+}
+@media screen and (max-width: 835px) {
+  #plansGold {
+    order: -1;
+  }
 }
 #plansGold > .plans-title {
   color: white;

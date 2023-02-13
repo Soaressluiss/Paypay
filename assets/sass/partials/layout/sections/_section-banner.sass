@@ -1,5 +1,6 @@
 @import ../../mixins
 @import ../../variables
+@import ../../breakpoints
 
 .container-main
     width: 100%
@@ -13,15 +14,24 @@
             flex-direction: column
             align-items: flex-start
             gap: 2rem
+            @include tablet /* breakpoint */
+                align-items: center
+                gap: 1rem
             .banner-title
                 @include fontDefault(2rem, bold,  $font-primary)
                 letter-spacing: 2px
                 line-height: 1.5
                 width: 80%
+                @include tablet  /* breakpoint */
+                    font-size: 1.3rem
+
                 .banner-Paypay
                     color: $color-fourth
                     @include fontDefault(2.4rem, bold,  $font-PayPay)
                     letter-spacing: normal
+                    @include tablet  /* breakpoint */
+                    font-size: 1.4rem
+
             .banner-btn
                 background-color: $color-primary
                 border: none
@@ -30,6 +40,9 @@
                 font-family: $font-secondary
                 text-transform: uppercase
                 font-weight: bold
+                @include tablet  /* breakpont */
+                    padding: .6rem 1.1rem
+
                 &:hover
                     background-color: $color-tertiary
                     cursor: pointer

@@ -1,5 +1,6 @@
 @import ../../mixins
 @import ../../variables
+@import ../../breakpoints
 
 .container-plans
     @include flexCenter
@@ -15,12 +16,19 @@
     .plans-msg
         @include fontDefault(1rem, 400, $font-tertiary)
         max-width: 50%
+        @include tablet /* breakpoint */
+            max-width: 80%
 
 .plans-wrapper
     @include flexCenter
     padding: 2rem
     gap: 1.5rem
     margin: 2rem 0
+    @include tablet /* breakpoints */
+        flex-direction: column
+        width: 85%
+        margin: 0
+        gap: 2rem
 
     .plans
         @extend %FlexCenterColumn
@@ -30,6 +38,8 @@
         box-shadow: 8px 12px 37px 11px rgba(0,0,0,0.1)
         padding: 1rem
         border-radius: 10px
+        @include tablet /* breakpoint */
+            gap: 1.3rem
         .plans-title
             @include fontDefault(1.5rem, bold, $font-secondary)
             letter-spacing: 1px
@@ -49,6 +59,8 @@
             font-family: $font-secondary
             text-transform: uppercase
             font-weight: bold
+            @include tablet /* breakpoint */
+                padding: 0.7rem 2.4rem
             &:hover
                 background-color: $color-tertiary
                 transition: all 1s ease
@@ -56,6 +68,8 @@
 
 #plansGold
     background-color: $color-fourth
+    @include tablet /* breakpoint */
+        order: -1
     > .plans-title
         color: white
     > .fa-medal

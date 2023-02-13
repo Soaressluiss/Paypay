@@ -1,5 +1,6 @@
 @import ../../mixins
 @import ../../variables
+@import ../../breakpoints
 
 .container-functionalities
     display: grid
@@ -7,6 +8,9 @@
     justify-items: center
     padding: 4rem
     gap: 3rem
+    @include tablet /* breakpoint */
+        grid-template-areas: 'a a''b c''d d' 
+        gap: 2rem
     .functionality-Title
         @include fontDefault(2rem, bold, $font-secondary)
         grid-area: a
