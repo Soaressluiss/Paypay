@@ -159,12 +159,22 @@
   width: 100%;
   margin: 100px 0;
 }
+@media screen and (max-width: 430px) {
+  .container-main {
+    margin: 60px 0;
+  }
+}
 .container-main .container-banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 4rem;
+  padding: 0 2rem;
   background-color: rgba(8, 235, 95, 0.2470588235);
+}
+@media screen and (max-width: 430px) {
+  .container-main .container-banner {
+    flex-direction: column-reverse;
+  }
 }
 .container-main .container-banner .banner-info {
   display: flex;
@@ -192,6 +202,12 @@
     font-size: 1.3rem;
   }
 }
+@media screen and (max-width: 430px) {
+  .container-main .container-banner .banner-info .banner-title {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+}
 .container-main .container-banner .banner-info .banner-title .banner-Paypay {
   color: #137527;
   font-size: 2.4rem;
@@ -199,7 +215,11 @@
   font-family: "Koh Santepheap", cursive;
   text-align: center;
   letter-spacing: normal;
-  font-size: 1.4rem;
+}
+@media screen and (max-width: 835px) {
+  .container-main .container-banner .banner-info .banner-title .banner-Paypay {
+    font-size: 1.4rem;
+  }
 }
 .container-main .container-banner .banner-info .banner-btn {
   background-color: #1BA637;
@@ -215,6 +235,12 @@
     padding: 0.6rem 1.1rem;
   }
 }
+@media screen and (max-width: 430px) {
+  .container-main .container-banner .banner-info .banner-btn {
+    margin-bottom: 1rem;
+    padding: 0.7rem 2.4rem;
+  }
+}
 .container-main .container-banner .banner-info .banner-btn:hover {
   background-color: #07D656;
   cursor: pointer;
@@ -223,6 +249,11 @@
 .container-main .container-banner > img {
   width: 40%;
   height: 100%;
+}
+@media screen and (max-width: 430px) {
+  .container-main .container-banner > img {
+    width: 100%;
+  }
 }
 
 .footer-dev, .footer, .container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
@@ -248,13 +279,19 @@
   display: grid;
   grid-template-areas: "a a a" "b c d";
   justify-items: center;
-  padding: 4rem;
+  padding: 2rem;
   gap: 3rem;
 }
 @media screen and (max-width: 835px) {
   .container-functionalities {
     grid-template-areas: "a a" "b c" "d d";
     gap: 2rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .container-functionalities {
+    grid-template-areas: "a" "b" "c" "d";
+    width: 100%;
   }
 }
 .container-functionalities .functionality-Title {
@@ -270,6 +307,7 @@
   font-weight: 400;
   font-family: "Inter", sans-serif;
   text-align: center;
+  width: 100%;
 }
 .container-functionalities .functionality02 {
   grid-area: c;
@@ -328,6 +366,11 @@
   background-color: rgba(8, 235, 95, 0.2470588235);
   gap: 5rem;
 }
+@media screen and (max-width: 430px) {
+  .container-app {
+    padding: 2rem 3rem;
+  }
+}
 .container-app .app-info-downloads {
   display: flex;
   flex-direction: column;
@@ -336,6 +379,13 @@
 }
 @media screen and (max-width: 835px) {
   .container-app .app-info-downloads {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 430px) {
+  .container-app .app-info-downloads .app-storeDownloads {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 }
@@ -348,6 +398,11 @@
   font-weight: bold;
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
+}
+@media screen and (max-width: 430px) {
+  .container-app .app-info-downloads .app-title {
+    font-size: 1.7rem;
+  }
 }
 .container-app .app-info-downloads .app-info {
   font-size: 0.9rem;
@@ -429,6 +484,11 @@
     width: 85%;
     margin: 0;
     gap: 2rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .plans-wrapper {
+    width: 100%;
   }
 }
 .plans-wrapper .plans {
@@ -540,6 +600,15 @@
   padding: 2rem 0;
   gap: 1rem;
 }
+@media screen and (max-width: 430px) {
+  .container-contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+}
 .container-contact .contact-title {
   font-size: 2rem;
   font-weight: bold;
@@ -554,6 +623,11 @@
   text-align: center;
   color: white;
   max-width: 60%;
+}
+@media screen and (max-width: 430px) {
+  .container-contact .contact-msg {
+    max-width: 90%;
+  }
 }
 
 #contact-email {
@@ -570,6 +644,11 @@
 #contact-email::placeholder {
   color: white;
 }
+@media screen and (max-width: 430px) {
+  #contact-email {
+    width: 80%;
+  }
+}
 
 .contact-btn {
   background-color: #1BA637;
@@ -581,6 +660,11 @@
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
+}
+@media screen and (max-width: 430px) {
+  .contact-btn {
+    width: 80%;
+  }
 }
 .contact-btn:hover {
   background-color: #07D656;
@@ -618,6 +702,11 @@
   text-align: center;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 430px) {
+  .footer-copy {
+    font-size: 0.9rem;
+  }
+}
 
 #payPay {
   color: #137527;
@@ -626,6 +715,11 @@
   font-family: "Koh Santepheap", cursive;
   text-align: center;
   letter-spacing: normal;
+}
+@media screen and (max-width: 430px) {
+  #payPay {
+    font-size: 0.9rem;
+  }
 }
 
 .footer-dev {
@@ -642,10 +736,16 @@
   color: white;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 430px) {
+  .footer-dev > h6 {
+    font-size: 1rem;
+  }
+}
 .footer-dev > h6 .devName {
   color: black;
   font-weight: 800;
   font-size: 1.4rem;
+  font-size: 1rem;
 }
 .footer-dev .dev-socialNetwork {
   display: flex;
@@ -676,6 +776,12 @@
   color: #137527;
   transform: scale(1.1);
   transition: all 0.5s ease;
+}
+@media screen and (max-width: 430px) {
+  .fa-circle-arrow-up {
+    top: 480px;
+    right: 20px;
+  }
 }
 
 html {

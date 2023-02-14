@@ -6,11 +6,14 @@
     display: grid
     grid-template-areas: "a a a""b c d"
     justify-items: center
-    padding: 4rem
+    padding: 2rem
     gap: 3rem
     @include tablet /* breakpoint */
         grid-template-areas: 'a a''b c''d d' 
         gap: 2rem
+    @include mobile /* breakpoint smartphone */
+        grid-template-areas: 'a''b''c''d'
+        width: 100%
     .functionality-Title
         @include fontDefault(2rem, bold, $font-secondary)
         grid-area: a
@@ -20,6 +23,7 @@
         @extend %FlexCenterColumn
         @extend %functionalitySpaces
         @include fontDefault(.9rem,400, $font-tertiary)
+        width: 100%
     .functionality02
         grid-area: c
         @extend %FlexCenterColumn
