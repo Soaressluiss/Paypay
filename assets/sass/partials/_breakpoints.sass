@@ -1,8 +1,14 @@
 $widthTablet: 835px
-$widthMobile: 426px
+$widthMobile: 430px
 
 // media queries para Tablets
 
 @mixin tablet
     @media screen and (max-width: $widthTablet)
+        @content
+
+//media queries para Smartphones 
+
+@mixin mobile
+    @media screen and (max-width: $widthMobile)
         @content

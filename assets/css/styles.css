@@ -20,6 +20,11 @@
   box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
 }
 
+.fa-x, .fa-bars-staggered {
+  font-size: 2rem;
+  color: green;
+}
+
 .header {
   width: 100%;
   background-color: white;
@@ -31,14 +36,20 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
+  justify-content: space-around;
+  gap: 5rem;
 }
 .header .navbar-links {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+}
+@media screen and (max-width: 430px) {
+  .header .navbar-links {
+    justify-content: center;
+    display: none;
+  }
 }
 .header .navbar-links > li {
   font-family: "Almarai", sans-serif;
@@ -62,6 +73,68 @@
     width: 90%;
   }
 }
+@media screen and (max-width: 430px) {
+  .header a > img {
+    width: 70%;
+  }
+}
+
+.fa-bars-staggered {
+  display: none;
+}
+@media screen and (max-width: 430px) {
+  .fa-bars-staggered {
+    display: block;
+  }
+}
+
+.fa-x {
+  display: none;
+}
+@media screen and (max-width: 430px) {
+  .fa-x {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .menuResponsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #07D656;
+    animation: transitionMenu 0.5s ease;
+  }
+  .menuResponsive > li {
+    font-family: "Almarai", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .menuResponsive > li > a {
+    color: black;
+  }
+  .menuResponsive > li > a:hover {
+    color: #137527;
+    transition: all 0.5s ease;
+  }
+  @keyframes transitionMenu {
+    from {
+      height: 0;
+      opacity: 0;
+    }
+    to {
+      height: 100vh;
+      opacity: 1;
+    }
+  }
+}
 
 .footer-dev, .footer, .container-contact, .plans-wrapper .plans, .container-plans .plans-info, .container-functionalities .functionality03, .container-functionalities .functionality02, .container-functionalities .functionality01 {
   display: flex;
@@ -75,6 +148,11 @@
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
+}
+
+.fa-bars-staggered, .fa-x {
+  font-size: 2rem;
+  color: green;
 }
 
 .container-main {
@@ -161,6 +239,11 @@
   box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
 }
 
+.fa-bars-staggered, .fa-x {
+  font-size: 2rem;
+  color: green;
+}
+
 .container-functionalities {
   display: grid;
   grid-template-areas: "a a a" "b c d";
@@ -232,6 +315,11 @@
   box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
 }
 
+.fa-bars-staggered, .fa-x {
+  font-size: 2rem;
+  color: green;
+}
+
 .container-app {
   display: flex;
   align-items: center;
@@ -293,6 +381,11 @@
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
+}
+
+.fa-bars-staggered, .fa-x {
+  font-size: 2rem;
+  color: green;
 }
 
 .container-plans {
@@ -435,6 +528,11 @@
   box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
 }
 
+.fa-bars-staggered, .fa-x {
+  font-size: 2rem;
+  color: green;
+}
+
 .container-contact {
   background-image: url(../imgs/background-contact.png);
   background-repeat: no-repeat;
@@ -502,6 +600,11 @@
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 8px 12px 37px 11px rgba(0, 0, 0, 0.1);
+}
+
+.fa-bars-staggered, .fa-x {
+  font-size: 2rem;
+  color: green;
 }
 
 .footer {

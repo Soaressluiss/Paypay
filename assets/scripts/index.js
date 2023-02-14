@@ -19,3 +19,20 @@ scrollBtn.addEventListener('click', () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 })
+
+
+//  Lógica do Menu hamburguer
+
+const menuBar = document.querySelector('.fa-bars-staggered')
+const menuClose = document.querySelector('.fa-x')
+const NavBar = document.querySelector('.navbar-links')
+
+menuBar.addEventListener('click', () => {
+    NavBar.classList.toggle('menuResponsive')
+    NavBar.classList.remove('navbar-links')
+})
+
+menuClose.addEventListener('click', () => {
+    NavBar.classList.add('navbar-links')
+    NavBar.classList.toggle('menuResponsive')
+})
