@@ -47,3 +47,13 @@ AOS.init({
     once: false,
     mirror: false
 });
+
+// Animação de Pre Loading
+
+const loading = document.querySelector('.preLoading')
+
+window.addEventListener('load', () => {
+    setInterval(() => {
+        loading.style.display = 'none'
+    }, 2500)
+})
