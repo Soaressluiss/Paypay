@@ -36,3 +36,14 @@ menuClose.addEventListener('click', () => {
     NavBar.classList.add('navbar-links')
     NavBar.classList.toggle('menuResponsive')
 })
+
+
+// Animações 
+
+AOS.init({
+    delay: 500,
+    duration: 1000,
+    easing: 'ease',
+    once: false,
+    mirror: false
+});

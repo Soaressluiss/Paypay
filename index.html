@@ -21,6 +21,9 @@
     <title>PayPay</title>
     <!-- scripts -->
     <script src="./assets/scripts/index.js" defer></script>
+    <!-- animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
 </head>
 
 <body>
@@ -41,28 +44,28 @@
     </header>
     <main class="container-main">
         <section class="container-banner">
-            <div class="banner-info">
+            <div class="banner-info" data-aos="fade-right">
                 <h2 class="banner-title"><span class="banner-Paypay">PayPay</span> é o cartão de crédito que tem tudo
                     que você precisa em um só lugar</h2>
                 <button class="banner-btn">Inscreva-se</button>
             </div>
-            <img src="./assets/imgs/Credit card-pana.svg" alt="credit card PayPay" loading="lazy">
+            <img data-aos="fade-up" src="./assets/imgs/Credit card-pana.svg" alt="credit card PayPay" loading="lazy">
         </section>
         <section class="container-functionalities" id="functionalities">
-            <h3 class="functionality-Title">Como funciona</h3>
-            <article class="functionality01">
+            <h3 class="functionality-Title" data-aos="fade-down">Como funciona</h3>
+            <article class="functionality01" data-aos="zoom-in">
                 <i class="fa-solid fa-shield-halved"></i>
                 <p class="functionality-info">100% seguro</p>
                 <p class="functionality-msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum vitae vero
                     eius tempore, cumque minus perferendis cum rem harum impedit</p>
             </article>
-            <article class="functionality02">
+            <article class="functionality02" data-aos="zoom-in">
                 <i class="fa-solid fa-basket-shopping"></i>
                 <p class="functionality-info">Vários Benefícios</p>
                 <p class="functionality-msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum vitae vero
                     eius tempore, cumque minus perferendis cum rem harum impedit</p>
             </article>
-            <article class="functionality03">
+            <article class="functionality03" data-aos="zoom-in">
                 <i class="fa-sharp fa-solid fa-cart-plus"></i>
                 <p class="functionality-info">Diversas vantagens</p>
                 <p class="functionality-msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum vitae vero
@@ -71,34 +74,34 @@
         </section>
         <section class="container-app" id="app">
             <div class="app-info-downloads">
-                <h3 class="app-title">
+                <h3 class="app-title" data-aos="fade-down">
                     Baixe nosso App para desfrutar mais!
                 </h3>
-                <p class="app-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maiores iusto illo
+                <p class="app-info" data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maiores iusto illo
                     voluptas ut numquam omnis perspiciatis tempora soluta repellat porro rem est ab molestiae at
                     commodi, consectetur itaque error!</p>
                 <div class="app-storeDownloads">
-                    <a href="#"><img src="./assets/imgs/google-play.SVG" alt="google-play" loading="lazy"></a>
-                    <a href="#"><img src="./assets/imgs/app-store.SVG" alt="app store" loading="lazy"></a>
+                    <a href="#"><img src="./assets/imgs/google-play.SVG" alt="google-play" loading="lazy" data-aos="fade-down"></a>
+                    <a href="#"><img src="./assets/imgs/app-store.SVG" alt="app store" loading="lazy" data-aos="fade-down"></a>
                 </div>
             </div>
-            <img class="appBoyimg" src="./assets/imgs/E-Wallet-pana.svg" alt="E-Wallet-pana"  loading="lazy">
+            <img class="appBoyimg" data-aos="fade-up" src="./assets/imgs/E-Wallet-pana.svg" alt="E-Wallet-pana"  loading="lazy">
         </section>
         <section class="container-plans" id="plans">
             <div class="plans-info">
-                <h4 class="plans-titlePrincipal">Nossos planos</h4>
-                <p class="plans-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, corporis facere
+                <h4 class="plans-titlePrincipal" data-aos="fade-down">Nossos planos</h4>
+                <p class="plans-msg" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, corporis facere
                     quisquam eos voluptates consectetur nobis dolorem architecto ex corrupti providen</p>
             </div>
             <div class="plans-wrapper">
-                <div class="plans">
+                <div class="plans" data-aos="fade-down">
                     <p class="plans-title">Bronze</p>
                     <i class="fa-solid fa-medal"></i>
                     <p class="plans-title-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
                         excepturi, possimus perferendis culpa qui pariatur a cumque dignissi</p>
                     <button class="btn-plan">Assinar</button>
                 </div>
-                <div class="plans" id="plansGold">
+                <div class="plans" id="plansGold" data-aos="fade-up">
                     <p class="plans-title">Ouro</p>
                     <i class="fa-solid fa-medal"></i>
                     <span class="plans-recommended">
@@ -108,7 +111,7 @@
                         excepturi, possimus perferendis culpa qui pariatur a cumque dignissi</p>
                     <button class="btn-plan">Assinar</button>
                 </div>
-                <div class="plans">
+                <div class="plans" data-aos="fade-down">
                     <p class="plans-title">Prata</p>
                     <i class="fa-solid fa-medal"></i>
                     <p class="plans-title-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
@@ -118,8 +121,8 @@
             </div>
         </section>
         <section class="container-contact" id="contact">
-            <h5 class="contact-title">Contato</h5>
-            <p class="contact-msg">
+            <h5 class="contact-title" data-aos="fade-up">Contato</h5>
+            <p class="contact-msg" data-aos="fade-up">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt asperiores dolores
                 voluptatibus, recusandae iste tempora, atque, necessitatibus perferendis unde nisi quam veritatis ut
                 repudian

@@ -31,6 +31,7 @@
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 999;
 }
 .header .navbar {
   display: flex;
@@ -247,7 +248,7 @@
   transition: all 1s ease;
 }
 .container-main .container-banner > img {
-  width: 40%;
+  width: 43%;
   height: 100%;
 }
 @media screen and (max-width: 430px) {
@@ -765,7 +766,7 @@
 
 .fa-circle-arrow-up {
   position: fixed;
-  top: 600px;
+  top: 550px;
   right: 30px;
   font-size: 2.2rem;
   color: #07D656;
