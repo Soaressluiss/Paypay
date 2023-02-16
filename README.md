@@ -10,7 +10,7 @@
 ![forks](https://img.shields.io/github/forks/soaressluiss/Paypay?style=for-the-badge&logo=appveyor)
 ![star user](https://img.shields.io/github/stars/soaressluiss/Paypay?style=for-the-badge&logo=appveyor&color=yellow)
 ![files](https://img.shields.io/github/directory-file-count/soaressluiss/Paypay?style=for-the-badge&logo=appveyor&color=blue)
-![status](https://img.shields.io/static/v1?label=STATUS&message=em-Desevolvimento&color=GREEN&style=for-the-badge&logo=appveyor)
+![status](https://img.shields.io/static/v1?label=STATUS&message=Cocluido&color=GREEN&style=for-the-badge&logo=appveyor)
 ![licenca](https://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge&logo=appveyor)
 
 </div>
@@ -82,7 +82,7 @@ ou clique em "GO Live" no canto inferior direito do Vscode para iniciar o Server
 
 ## 📽 Gif demostrativo:
 
-![animation]()
+![animation](./assets/imgs/paypay%20animation%20README.gif)
 
 ## ♻️ Como contribuir:
 
