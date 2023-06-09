@@ -27,6 +27,8 @@ const menuBar = document.querySelector('.fa-bars-staggered')
 const menuClose = document.querySelector('.fa-x')
 const NavBar = document.querySelector('.navbar-links')
 
+
+
 menuBar.addEventListener('click', () => {
     NavBar.classList.toggle('menuResponsive')
     NavBar.classList.remove('navbar-links')
@@ -36,6 +38,14 @@ menuClose.addEventListener('click', () => {
     NavBar.classList.add('navbar-links')
     NavBar.classList.toggle('menuResponsive')
 })
+
+const menuResponsive = document.querySelectorAll('.navbar-links li')
+    menuResponsive.forEach((item)=>{
+        item.addEventListener('click', ()=>{
+            NavBar.classList.remove('menuResponsive')
+            NavBar.classList.add('navbar-links')
+        })
+    })
 
 
 // Animações 
