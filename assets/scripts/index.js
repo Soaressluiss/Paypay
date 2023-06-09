@@ -26,6 +26,8 @@ scrollBtn.addEventListener('click', () => {
 const menuBar = document.querySelector('.fa-bars-staggered')
 const menuClose = document.querySelector('.fa-x')
 const NavBar = document.querySelector('.navbar-links')
+const menuResponsiveElements = document.querySelectorAll('.navbar-links li')
+const menuResponsive = document.querySelector('.navbar-links')
 
 
 
@@ -39,13 +41,21 @@ menuClose.addEventListener('click', () => {
     NavBar.classList.toggle('menuResponsive')
 })
 
-const menuResponsive = document.querySelectorAll('.navbar-links li')
-    menuResponsive.forEach((item)=>{
-        item.addEventListener('click', ()=>{
-            NavBar.classList.remove('menuResponsive')
-            NavBar.classList.add('navbar-links')
-        })
+
+menuResponsiveElements.forEach((item)=>{
+    item.addEventListener('click', ()=>{
+        NavBar.classList.remove('menuResponsive')
+        NavBar.classList.add('navbar-links')   
     })
+        
+})
+
+menuResponsive.addEventListener('click', function(e){
+    if(e.target === this ){
+        NavBar.classList.remove('menuResponsive')
+        NavBar.classList.add('navbar-links')
+    }
+})
 
 
 // Animações 
