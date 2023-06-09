@@ -44,7 +44,7 @@ AOS.init({
     delay: 500,
     duration: 1000,
     easing: 'ease',
-    once: false,
+    once: true,
     mirror: false
 });
 
@@ -53,7 +53,7 @@ AOS.init({
 const loading = document.querySelector('.preLoading')
 
 window.addEventListener('load', () => {
-    setInterval(() => {
+    setTimeout(() => {
         loading.style.display = 'none'
     }, 2500)
 })
