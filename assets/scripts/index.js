@@ -25,35 +25,37 @@ scrollBtn.addEventListener('click', () => {
 
 const menuBar = document.querySelector('.fa-bars-staggered')
 const menuClose = document.querySelector('.fa-x')
-const NavBar = document.querySelector('.navbar-links')
+const navbarAncoras = document.querySelector('.navbar-links')
 const menuResponsiveElements = document.querySelectorAll('.navbar-links li')
 const menuResponsive = document.querySelector('.navbar-links')
 
 
-
+// ativa o menu mobile
 menuBar.addEventListener('click', () => {
-    NavBar.classList.toggle('menuResponsive')
-    NavBar.classList.remove('navbar-links')
+    navbarAncoras.classList.toggle('menuResponsive')
+    navbarAncoras.classList.remove('navbar-links')
 })
 
+// oculta o menu mobile
 menuClose.addEventListener('click', () => {
-    NavBar.classList.add('navbar-links')
-    NavBar.classList.toggle('menuResponsive')
+    navbarAncoras.classList.add('navbar-links')
+    navbarAncoras.classList.toggle('menuResponsive')
 })
 
-
+// oculta o menu moblie ao clicar em uma ancora 
 menuResponsiveElements.forEach((item)=>{
     item.addEventListener('click', ()=>{
-        NavBar.classList.remove('menuResponsive')
-        NavBar.classList.add('navbar-links')   
+        navbarAncoras.classList.remove('menuResponsive')
+        navbarAncoras.classList.add('navbar-links')   
     })
         
 })
 
+// oculta o menu mobile ao clicar fora dele 
 menuResponsive.addEventListener('click', function(e){
     if(e.target === this ){
-        NavBar.classList.remove('menuResponsive')
-        NavBar.classList.add('navbar-links')
+        navbarAncoras.classList.remove('menuResponsive')
+        navbarAncoras.classList.add('navbar-links')
     }
 })
 

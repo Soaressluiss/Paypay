@@ -38,7 +38,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  gap: 5rem;
 }
 .header .navbar-links {
   display: flex;
@@ -180,8 +179,9 @@
 .container-main .container-banner .banner-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 }
 @media screen and (max-width: 835px) {
   .container-main .container-banner .banner-info {
@@ -190,7 +190,7 @@
   }
 }
 .container-main .container-banner .banner-info .banner-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   font-family: "Almarai", sans-serif;
   text-align: center;
@@ -245,7 +245,8 @@
 .container-main .container-banner .banner-info .banner-btn:hover {
   background-color: #07D656;
   cursor: pointer;
-  transition: all 1s ease;
+  transition: all 1s linear;
+  transform: scale(0.9);
 }
 .container-main .container-banner > img {
   width: 43%;
@@ -540,8 +541,9 @@
 }
 .plans-wrapper .plans .btn-plan:hover {
   background-color: #07D656;
-  transition: all 1s ease;
+  transition: all 0.5s linear;
   cursor: pointer;
+  transform: scale(0.9);
 }
 
 #plansGold {
@@ -645,6 +647,9 @@
 #contact-email::placeholder {
   color: white;
 }
+#contact-email:active, #contact-email:focus {
+  outline: none;
+}
 @media screen and (max-width: 430px) {
   #contact-email {
     width: 80%;
@@ -669,8 +674,9 @@
 }
 .contact-btn:hover {
   background-color: #07D656;
-  transition: all 1s ease;
+  transition: all 0.5s linear;
   cursor: pointer;
+  transform: scale(0.9);
 }
 
 .footer-dev, .footer, .container-functionalities .functionality01, .container-functionalities .functionality02, .container-functionalities .functionality03, .container-plans .plans-info, .plans-wrapper .plans, .container-contact {
@@ -796,6 +802,10 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: #07D656;
   border-radius: 20px;
+}
+
+img {
+  width: 100%;
 }
 
 .preLoading {
