@@ -79,3 +79,19 @@ window.addEventListener('load', () => {
         loading.style.display = 'none'
     }, 2500)
 })
+
+// Scroll position
+
+const handleScrollLogger = () =>{
+    const scrollRegister = document.querySelector('.scrollLogger');
+    
+    if(scrollRegister){
+        window.addEventListener('scroll', ()=>{
+            const pageHeight =  document.body.clientHeight - window.innerHeight;
+            const scrollPage =  (window.scrollY /pageHeight) * 100;
+            scrollRegister.style.width = `${scrollPage}%`;
+        })
+    }
+}
+
+handleScrollLogger();

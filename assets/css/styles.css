@@ -850,5 +850,14 @@ img {
     transform: scale(1.1);
   }
 }
+.scrollLogger {
+  width: 0%;
+  height: 5px;
+  background-color: #07D656;
+  display: block;
+  position: fixed;
+  top: 0;
+  transition: width 1s ease;
+}
 
 /*# sourceMappingURL=styles.css.map */

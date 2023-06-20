@@ -48,9 +48,8 @@ img
             height: 64px
             animation: loading 2.5s linear
 
-
 // animações 
-    
+
 @keyframes loading
     0%
         background-image: url(../imgs/animationIMG/dollar.png)
@@ -64,3 +63,14 @@ img
     100%
         background-image: url(../imgs/animationIMG/dollar-symbol.png)
         transform: scale(1.1)
+
+// scrollPosition
+
+.scrollLogger
+    width: 0%
+    height: 5px
+    background-color: $color-tertiary
+    display: block
+    position: fixed
+    top: 0
+    transition: width 1s ease
