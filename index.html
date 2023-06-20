@@ -1,162 +1,253 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Precisou de crédito? vem ser PAYLover! PayPay, o cartão de crédito perfeito para Você"
+        />
+        <meta name="theme-color" content="#137527" />
+        <link
+            rel="shortcut icon"
+            href="./assets/imgs/icon.png"
+            type="image/x-icon"
+        />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Almarai&family=Inter&family=Koh+Santepheap&family=Source+Sans+Pro&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <title>PayPay</title>
+        <!-- scripts -->
+        <script src="./assets/scripts/index.js" defer></script>
+        <!-- animations -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Precisou de crédito? vem ser PAYLover! PayPay, o cartão de crédito perfeito para Você">
-    <meta name="theme-color" content="#137527">
-    <link rel="shortcut icon" href="./assets/imgs/icon.png" type="image/x-icon">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Almarai&family=Inter&family=Koh+Santepheap&family=Source+Sans+Pro&display=swap"
-        rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>PayPay</title>
-    <!-- scripts -->
-    <script src="./assets/scripts/index.js" defer></script>
-    <!-- animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
-</head>
-
-<body>
-    <div class="preLoading">
-        <div class="loading">
-            <span></span>
-        </div>
-    </div>
-    <header class="header">
-        <nav class="navbar">
-            <a href="/" aria-label="logo da pagina home">
-                <img class="navbar-img" src="./assets/imgs/Logo.svg" alt="Logo do site">
-            </a>
-            <ul class="navbar-links">
-                <li><a href="#functionalities">Funcionalidades</a></li>
-                <li><a href="#app">App</a></li>
-                <li><a href="#plans">Planos</a></li>
-                <li><a href="#contact">Contato</a></li>
-                <i class="fa-solid fa-x"></i>
-            </ul>
-            <i class="fa-solid fa-bars-staggered"></i>
-        </nav>
-    </header>
-    <main class="container-main">
-        <section class="container-banner">
-            <div class="banner-info" data-aos="fade-right">
-                <h2 class="banner-title"><span class="banner-Paypay">PayPay</span> é o cartão de crédito que tem tudo
-                    que você precisa em um só lugar</h2>
-                <button class="banner-btn">Inscreva-se</button>
+    <body>
+        <div class="preLoading">
+            <div class="loading">
+                <span></span>
             </div>
-            <img data-aos="fade-up" src="./assets/imgs/Credit card-pana.svg" alt="credit card PayPay" loading="lazy">
-        </section>
-        <section class="container-functionalities" id="functionalities">
-            <h3 class="functionality-Title" data-aos="fade-down">Como funciona</h3>
-            <article class="functionality01" data-aos="zoom-in">
-                <i class="fa-solid fa-shield-halved"></i>
-                <p class="functionality-info">100% seguro</p>
-                <p class="functionality-msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum vitae vero
-                    eius tempore, cumque minus perferendis cum rem harum impedit</p>
-            </article>
-            <article class="functionality02" data-aos="zoom-in">
-                <i class="fa-solid fa-basket-shopping"></i>
-                <p class="functionality-info">Vários Benefícios</p>
-                <p class="functionality-msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum vitae vero
-                    eius tempore, cumque minus perferendis cum rem harum impedit</p>
-            </article>
-            <article class="functionality03" data-aos="zoom-in">
-                <i class="fa-sharp fa-solid fa-cart-plus"></i>
-                <p class="functionality-info">Diversas vantagens</p>
-                <p class="functionality-msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum vitae vero
-                    eius tempore, cumque minus perferendis cum rem harum impedit</p>
-            </article>
-        </section>
-        <section class="container-app" id="app">
-            <div class="app-info-downloads">
-                <h3 class="app-title" data-aos="fade-down">
-                    Baixe nosso App para desfrutar mais!
+        </div>
+        <header class="header">
+            <nav class="navbar">
+                <a href="/" aria-label="logo da pagina home">
+                    <img
+                        class="navbar-img"
+                        src="./assets/imgs/Logo.svg"
+                        alt="Logo do site"
+                    />
+                </a>
+                <ul class="navbar-links">
+                    <li><a href="#functionalities">Funcionalidades</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <i class="fa-solid fa-x"></i>
+                </ul>
+                <i class="fa-solid fa-bars-staggered"></i>
+            </nav>
+        </header>
+        <main class="container-main">
+            <section class="container-banner">
+                <div class="banner-info" data-aos="fade-right">
+                    <h2 class="banner-title">
+                        <span class="banner-Paypay">PayPay</span> é o cartão de
+                        crédito que tem tudo que você precisa em um só lugar
+                    </h2>
+                    <button class="banner-btn">Inscreva-se</button>
+                </div>
+                <img
+                    data-aos="fade-up"
+                    src="./assets/imgs/Credit card-pana.svg"
+                    alt="credit card PayPay"
+                    loading="lazy"
+                />
+            </section>
+            <section class="container-functionalities" id="functionalities">
+                <h3 class="functionality-Title" data-aos="fade-down">
+                    Como funciona
                 </h3>
-                <p class="app-info" data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maiores iusto illo
-                    voluptas ut numquam omnis perspiciatis tempora soluta repellat porro rem est ab molestiae at
-                    commodi, consectetur itaque error!</p>
-                <div class="app-storeDownloads">
-                    <a href="#"><img src="./assets/imgs/google-play.SVG" alt="google-play" loading="lazy" data-aos="fade-down"></a>
-                    <a href="#"><img src="./assets/imgs/app-store.SVG" alt="app store" loading="lazy" data-aos="fade-down"></a>
+                <article class="functionality01" data-aos="zoom-in">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <p class="functionality-info">100% seguro</p>
+                    <p class="functionality-msg">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Rerum vitae vero eius tempore, cumque minus
+                        perferendis cum rem harum impedit
+                    </p>
+                </article>
+                <article class="functionality02" data-aos="zoom-in">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <p class="functionality-info">Vários Benefícios</p>
+                    <p class="functionality-msg">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Rerum vitae vero eius tempore, cumque minus
+                        perferendis cum rem harum impedit
+                    </p>
+                </article>
+                <article class="functionality03" data-aos="zoom-in">
+                    <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                    <p class="functionality-info">Diversas vantagens</p>
+                    <p class="functionality-msg">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Rerum vitae vero eius tempore, cumque minus
+                        perferendis cum rem harum impedit
+                    </p>
+                </article>
+            </section>
+            <section class="container-app" id="app">
+                <div class="app-info-downloads">
+                    <h3 class="app-title" data-aos="fade-down">
+                        Baixe nosso App para desfrutar mais!
+                    </h3>
+                    <p class="app-info" data-aos="fade-down">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Nobis maiores iusto illo voluptas ut numquam omnis
+                        perspiciatis tempora soluta repellat porro rem est ab
+                        molestiae at commodi, consectetur itaque error!
+                    </p>
+                    <div class="app-storeDownloads">
+                        <a href="#"
+                            ><img
+                                src="./assets/imgs/google-play.SVG"
+                                alt="google-play"
+                                loading="lazy"
+                                data-aos="fade-down"
+                        /></a>
+                        <a href="#"
+                            ><img
+                                src="./assets/imgs/app-store.SVG"
+                                alt="app store"
+                                loading="lazy"
+                                data-aos="fade-down"
+                        /></a>
+                    </div>
                 </div>
-            </div>
-            <img class="appBoyimg" data-aos="fade-up" src="./assets/imgs/E-Wallet-pana.svg" alt="E-Wallet-pana"  loading="lazy">
-        </section>
-        <section class="container-plans" id="plans">
-            <div class="plans-info">
-                <h4 class="plans-titlePrincipal" data-aos="fade-down">Nossos planos</h4>
-                <p class="plans-msg" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, corporis facere
-                    quisquam eos voluptates consectetur nobis dolorem architecto ex corrupti providen</p>
-            </div>
-            <div class="plans-wrapper">
-                <div class="plans" data-aos="fade-down">
-                    <p class="plans-title">Bronze</p>
-                    <i class="fa-solid fa-medal"></i>
-                    <p class="plans-title-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-                        excepturi, possimus perferendis culpa qui pariatur a cumque dignissi</p>
-                    <button class="btn-plan">Assinar</button>
+                <img
+                    class="appBoyimg"
+                    data-aos="fade-up"
+                    src="./assets/imgs/E-Wallet-pana.svg"
+                    alt="E-Wallet-pana"
+                    loading="lazy"
+                />
+            </section>
+            <section class="container-plans" id="plans">
+                <div class="plans-info">
+                    <h4 class="plans-titlePrincipal" data-aos="fade-down">
+                        Nossos planos
+                    </h4>
+                    <p class="plans-msg" data-aos="fade-up">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Hic, corporis facere quisquam eos voluptates consectetur
+                        nobis dolorem architecto ex corrupti providen
+                    </p>
                 </div>
-                <div class="plans" id="plansGold" data-aos="fade-up">
-                    <p class="plans-title">Ouro</p>
-                    <i class="fa-solid fa-medal"></i>
-                    <span class="plans-recommended">
-                        Recomendado
-                    </span>
-                    <p class="plans-title-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-                        excepturi, possimus perferendis culpa qui pariatur a cumque dignissi</p>
-                    <button class="btn-plan">Assinar</button>
+                <div class="plans-wrapper">
+                    <div class="plans" data-aos="fade-down">
+                        <p class="plans-title">Bronze</p>
+                        <i class="fa-solid fa-medal"></i>
+                        <p class="plans-title-info">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Assumenda, excepturi, possimus perferendis
+                            culpa qui pariatur a cumque dignissi
+                        </p>
+                        <button class="btn-plan">Assinar</button>
+                    </div>
+                    <div class="plans" id="plansGold" data-aos="fade-up">
+                        <p class="plans-title">Ouro</p>
+                        <i class="fa-solid fa-medal"></i>
+                        <span class="plans-recommended"> Recomendado </span>
+                        <p class="plans-title-info">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Assumenda, excepturi, possimus perferendis
+                            culpa qui pariatur a cumque dignissi
+                        </p>
+                        <button class="btn-plan">Assinar</button>
+                    </div>
+                    <div class="plans" data-aos="fade-down">
+                        <p class="plans-title">Prata</p>
+                        <i class="fa-solid fa-medal"></i>
+                        <p class="plans-title-info">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Assumenda, excepturi, possimus perferendis
+                            culpa qui pariatur a cumque dignissi
+                        </p>
+                        <button class="btn-plan">Assinar</button>
+                    </div>
                 </div>
-                <div class="plans" data-aos="fade-down">
-                    <p class="plans-title">Prata</p>
-                    <i class="fa-solid fa-medal"></i>
-                    <p class="plans-title-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-                        excepturi, possimus perferendis culpa qui pariatur a cumque dignissi</p>
-                    <button class="btn-plan">Assinar</button>
-                </div>
-            </div>
-        </section>
-        <section class="container-contact" id="contact">
-            <h5 class="contact-title" data-aos="fade-up">Contato</h5>
-            <p class="contact-msg" data-aos="fade-up">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt asperiores dolores
-                voluptatibus, recusandae iste tempora, atque, necessitatibus perferendis unde nisi quam veritatis ut
-                repudian
+            </section>
+            <section class="container-contact" id="contact">
+                <h5 class="contact-title" data-aos="fade-up">Contato</h5>
+                <p class="contact-msg" data-aos="fade-up">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid nesciunt asperiores dolores voluptatibus, recusandae
+                    iste tempora, atque, necessitatibus perferendis unde nisi
+                    quam veritatis ut repudian
+                </p>
+                <form class="contact-form" action="#" method="post">
+                    <input
+                        type="email"
+                        name="email"
+                        id="contact-email"
+                        placeholder="Digite seu e-mail"
+                        required
+                        pattern="[a-zA-Z0-9_.]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}"
+                    />
+                    <input class="contact-btn" type="button" value="Enviar" />
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <i class="fa-solid fa-circle-arrow-up"></i>
+            <p class="footer-copy">
+                &copy; <span id="payPay">PayPay</span> - todos os direitos
+                reservados - 2023
             </p>
-            <form class="contact-form" action="#" method="post">
-                <input type="email" name="email" id="contact-email" placeholder="Digite seu e-mail" required
-                    pattern="[a-zA-Z0-9_.]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}">
-                <input class="contact-btn" type="button" value="Enviar">
-            </form>
-        </section>
-    </main>
-    <footer class="footer">
-        <i class="fa-solid fa-circle-arrow-up"></i>
-        <p class="footer-copy">
-            &copy; <span id="payPay">PayPay</span> - todos os direitos reservados - 2023
-        </p>
-        <div class="footer-dev" aria-label="sessão referente as informações sobre o desenvolvedor">
-            <h6>Desenvolvido com ❤ por <span class="devName">Luís Soares</span></h6>
-            <ul class="dev-socialNetwork">
-                <li><a class="social-network" href="https://www.linkedin.com/in/luissoaresdeveloper/"
-                        aria-label="Link do linkedin do desenvolvedor" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a></li>
-                <li><a class="social-network" href="https://github.com/Soaressluiss"
-                        aria-label="Link do github do desenvolvedor" target="_blank"><i
-                            class="fa-brands fa-github"></i></a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-</body>
-
+            <div
+                class="footer-dev"
+                aria-label="sessão referente as informações sobre o desenvolvedor"
+            >
+                <h6>
+                    Desenvolvido com ❤ por
+                    <span class="devName">Luís Soares</span>
+                </h6>
+                <ul class="dev-socialNetwork">
+                    <li>
+                        <a
+                            class="social-network"
+                            href="https://www.linkedin.com/in/luissoaresdeveloper/"
+                            aria-label="Link do linkedin do desenvolvedor"
+                            target="_blank"
+                            ><i class="fa-brands fa-linkedin"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            class="social-network"
+                            href="https://github.com/Soaressluiss"
+                            aria-label="Link do github do desenvolvedor"
+                            target="_blank"
+                            ><i class="fa-brands fa-github"></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
